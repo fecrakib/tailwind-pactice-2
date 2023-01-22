@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#2E2E2E",
+              white: "#FFFFFF",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              rubik: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <section class="container m-auto">
+      <nav class="flex justify-between h-20 items-center">
+        <h1 class="text-lg font-semibold">Jhaka Naka Production</h1>
+        <ul class="flex gap-6 text-lg font-semibold">
+          <li>About US</li>
+          <li>our Movies</li>
+          <li>Services</li>
+        </ul>
+      </nav>
+    </section>
+    <!-- bannder -->
+    <section class="h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover mb-20">
+      <div class="h-full w-full max-w-7xl flex items-center m-auto ">
+        <div>
+            <h4 class="text-white font-semibold ">Movie production studio</h4>
+            <h1 class="text-white font-semibold text-7xl ">
+              Films MAde to <br />
+              <span class="text-yellow">Perfection</span>
+    
+            </h1>
+            <p class="text-white font-serif">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, <br />
+                luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            <button class="border-2 border-white py-3 px-4 text-white text-2xl mt-4">Discover More</button>
+        </div>
+    
+      </div>
+    </section>
+    <!-- hero-section -->
+    <section class="container m-auto my-15">
+        <div class="flex justify-between">
+            <div >
+                <img class="w-[500px] h-[500px] " src="./images/camera-man.jpg" alt="">
+                
+                </div>
+                <div class="w-[550px] h-[350px] ">
+                    <h1 class="text-7xl py-5">Just Got better</h1>
+                    <h1 class="text-7xl">Just Got better</h1>
+                    <button class="border-2 border-black py-3 px-4 text-black text-2xl mt-20">Discover More</button>
+                </div>
+        </div>
+        <!-- vision -->
+        <div class="grid grid-cols-3 gap-5 my-20">
+            <div class="">
+                <h1 class="text-5xl font-semibold">Our Vision</h1>
+                <p class="text-base py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab dolores iure dicta expedita voluptatum.</p>
+            </div>
+            <div class="">
+                <h1 class="text-5xl font-semibold">Our Vision</h1>
+                <p class="text-base py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab dolores iure dicta expedita voluptatum.</p>
+            </div>
+            <div class="">
+                <h1 class="text-5xl font-semibold">Our Vision</h1>
+                <p class="text-base py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab dolores iure dicta expedita voluptatum.</p>
+            </div>
+        
+        </div>
+
+    </section>
+  </body>
+</html>
