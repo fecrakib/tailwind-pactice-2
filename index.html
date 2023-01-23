@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/929ce19bcd.js" crossorigin="anonymous"></script>
+    <script defer src="./index.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -33,19 +35,25 @@
   <body>
     <!-- nav-bar -->
     <section class="container m-auto">
-      <nav class="flex justify-between h-20 items-center">
+      <nav class="flex justify-between h-20 items-center mx-4">
         <h1 class="text-lg font-semibold">Jhaka Naka Production</h1>
-        <ul class="flex gap-6 text-lg font-semibold">
+        <i id="menuIcon" class="fa-solid fa-bars cursor-pointer md:hidden"></i>
+        <ul class="md:flex hidden gap-6 text-lg font-semibold">
           <li>About US</li>
           <li>our Movies</li>
           <li>Services</li>
         </ul>
       </nav>
+      <ul id="dropdown" class="text-lg font-semibold p-4 hidden">
+        <li>About US</li>
+        <li>our Movies</li>
+        <li>Services</li>
+      </ul>
     </section>
     <!-- bannder -->
     <section class="h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover mb-20">
       <div class="h-full w-full max-w-7xl flex items-center m-auto ">
-        <div>
+        <div class="ml-4">
             <h4 class="text-white font-semibold ">Movie production studio</h4>
             <h1 class="text-white font-semibold text-7xl ">
               Films MAde to <br />
@@ -102,7 +110,7 @@
 
               
              
-                <div class="grid lg:grid-cols-2  p-10 ">
+                <div class="grid  lg:grid-cols-2  p-10 ">
                   
                <div>
                 <h5 class="text-lg text-white ">OUR MOVIES</h5>
@@ -116,11 +124,11 @@
                 </div>
          
 
-            <div class="grid lg:grid-cols-4 grid-cols-1 mx-16 ">
-              <div ><img class="w-[260px] h-[350px] mb-10" src="./images/fractured.jpg" alt=""></div>
-              <div><img class="w-[260px] h-[350px] mb-10" src="./images/inception.jpg" alt=""></div>
-              <div><img class="w-[260px] h-[350px] mb-10" src="./images/interstellar.jpg" alt=""></div>
-              <div><img class="w-[260px] h-[350px] mb-10" src="./images/tenet.jpg" alt=""></div>
+            <div class="grid lg:grid-cols-4 grid-cols-1 m-auto p-14  justify-items-center">
+             <img class="w-[260px] h-[350px] mb-10" src="./images/fractured.jpg" alt="">
+             <img class="w-[260px] h-[350px] mb-10" src="./images/inception.jpg" alt="">
+             <img class="w-[260px] h-[350px] mb-10" src="./images/interstellar.jpg" alt="">
+             <img class="w-[260px] h-[350px] mb-10" src="./images/tenet.jpg" alt="">
             </div>
 
             </div>
